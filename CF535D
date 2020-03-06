@@ -1,3 +1,10 @@
+26的空位次方。空位的个数通过差分求得。
+接下来判断是否无解。
+一、不相交。忽略。
+二、相交。我们要判断相交部分是不是相同。通过迭代kmp求得的next数组，将可以重合的位置标记即可。
+
+代码：
+
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 #include<cstdio>
